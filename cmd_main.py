@@ -6,11 +6,11 @@ import io
 import threading
 import time
 import json
-import winsound  # Windows only — can remove if not needed
+import winsound  # Windows only — remove if not needed
 import tkinter as tk
 from tkinter import ttk
 
-# ─── TTS with gTTS + pygame (reliable, no "run loop not started" issue) ───────
+#  TTS with gTTS + pygame 
 pygame.mixer.init(frequency=22050, size=-16, channels=2, buffer=4096)
 
 def speak_text(text):
@@ -36,8 +36,8 @@ def speak_text(text):
     except Exception as e:
         print(f"gTTS / pygame error: {e}")
 
-# ─── Gemini Setup ────────────────────────────────────────────────────────────
-genai.configure(api_key="AIzaSyCWD_OefSONJaERN4wtL3Sox5M7hw80reQ")
+#  Gemini Setup 
+genai.configure(api_key="Input API KEY") #Input the API key
 MODEL_ID = "gemini-2.5-flash"
 
 SYSTEM_INSTRUCTION = """
@@ -80,7 +80,7 @@ def start_timer(duration_minutes):
     with lock:
         current_duration_sec = duration_minutes * 60
         timer_start_time = time.time()
-        print(f"[TIMER START] {duration_minutes} min ({current_duration_sec} sec)")  # debug
+        print(f"[TIMER START] {duration_minutes} min ({current_duration_sec} sec)")  
 
     time.sleep(duration_minutes * 60)
 
@@ -177,11 +177,11 @@ def recipe():
                 print(f"Error: {e}")
                 return jsonify({"error": str(e)}), 500
 
-# ─── Tkinter UI ──────────────────────────────────────────────────────────────
+# ─── Tkinter UI 
 def run_flask():
     app.run(host="0.0.0.0", port=5000, debug=False, use_reloader=False)
 
-# Colors (modern dark cooking app theme)
+# Colors 
 BG_COLOR        = "#1a1a1a"
 ACCENT_COLOR    = "#e67e22"
 TEXT_COLOR      = "#eeeeee"
@@ -289,4 +289,5 @@ if __name__ == "__main__":
              font=("Segoe UI", 9), bg=BG_COLOR, fg="#777777").pack(side="bottom", pady=10)
 
     root.after(800, update_ui)
+
     root.mainloop()
