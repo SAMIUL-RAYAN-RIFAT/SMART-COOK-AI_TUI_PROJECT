@@ -87,7 +87,8 @@ Breadboard
 
 3.Make sure to install python and its necessary libary file. Open cmd_main.py 
 
-<img width="1920" height="1080" alt="Screenshot 2026-01-25 130531" src="https://github.com/user-attachments/assets/0eb7c057-05f7-4b50-b590-0709640ded85" />
+<img width="1920" height="1080" alt="550528895-0eb7c057-05f7-4b50-b590-0709640ded85" src="https://github.com/user-attachments/assets/8c92262c-8b66-40ef-95ea-334b480ec9ce" />
+
 
 
 ***Here in the code edit api_key with your own API key string. Save the file***
