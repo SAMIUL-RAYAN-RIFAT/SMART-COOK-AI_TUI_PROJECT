@@ -15,26 +15,26 @@ An interactive Human-Computer Interaction (HCI) project that combines:
 
 This system generates dynamic, step-by-step cooking recipes with automatic timers and voice guidance — creating a hands-free smart cooking experience.
 
-# 🚀 Project Overview
+#  Project Overview
 
 The Smart RFID Cooking Assistant allows users to:
 
-📇 Scan a Recipe Card → AI generates a new recipe
+Scan a Recipe Card → AI generates a new recipe
 
-⏭ Scan a Next Step Card → Moves to next cooking step
+ Scan a Next Step Card → Moves to next cooking step
   or, scan other recipe cards(recipe card can be modified according user intrest like fish, mutton recipe card)
 
-🔔 Automatic timer per step
+ Automatic timer per step
 
-🗣 Voice instruction playback
+ Voice instruction playback
 
-🖥 Live UI with countdown + progress bar
+ Live UI with countdown + progress bar
 
 This project was developed as part of an HCI course project focusing on tangible interaction using RFID-based input.
 
-# 🛠 Technologies Used
+#  Technologies Used
 
-🔌 Hardware & Embedded
+ Hardware & Embedded
 
 ESP32 Microcontroller
 
@@ -52,7 +52,7 @@ Jumper Wires
 
 Breadboard
 
-# 📡 Setup
+#  Setup
  MFRC522 Pin | ESP32 Pin 
  ----------- | --------- 
  SDA (SS)    | GPIO 2    
